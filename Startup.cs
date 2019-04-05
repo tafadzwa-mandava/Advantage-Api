@@ -32,7 +32,10 @@ namespace Advantage.API
             _connectionString = Configuration["secretConnectionString"];
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-            services.AddEntityFrameworkNpgsql().AddDbContext<ApiContext>(opt => opt.UseNpgsql(_connectionString));
+            
+            services.AddEntityFrameworkNpgsql()
+            .AddDbContext<ApiContext>(
+                opt => opt.UseNpgsql(_connectionString));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
