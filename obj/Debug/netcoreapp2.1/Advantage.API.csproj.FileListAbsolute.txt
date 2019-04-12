@@ -1,7 +1,7 @@
+C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.dll
 C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.deps.json
 C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.runtimeconfig.json
 C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.runtimeconfig.dev.json
-C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.dll
 C:\Users\Bunchies\source\repos\Advantage.API\bin\Debug\netcoreapp2.1\Advantage.API.pdb
 C:\Users\Bunchies\source\repos\Advantage.API\obj\Debug\netcoreapp2.1\Advantage.API.csprojAssemblyReference.cache
 C:\Users\Bunchies\source\repos\Advantage.API\obj\Debug\netcoreapp2.1\Advantage.API.csproj.CoreCompileInputs.cache
