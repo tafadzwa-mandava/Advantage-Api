@@ -70,5 +70,15 @@ namespace Advantage.API.Controllers
             return CreatedAtRoute("GetOrder", new {id = order.Id}, order); 
         }
 
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var order = _ctx.Orders.Find(id);
+            _ctx.Orders.Remove(order);
+            _ctx.SaveChanges();
+            
+            return Ok();
+        }
+
     }
 }

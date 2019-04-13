@@ -53,5 +53,16 @@ namespace Advantage.API.Controllers
 
             return CreatedAtRoute("GetCustomer", new {id = customer.Id}, customer);  //From popup we see that the first argument is the name of the route, then we need to pass it the value of the id of the customer that we just created and the value of the actual customer object itself. CreatedAtRoute returns a 201 response which is a http response when something is created successfully
         }
+
+        // Delete localhost:5001/api/delete/5
+        [HttpDelete("{id}")]
+        public IActionResult Delete(int id)
+        {
+            var customer = _ctx.Customers.Find(id);
+            _ctx.Customers.Remove(customer);
+            _ctx.SaveChanges();
+
+            return Ok();
+        }
     }   
 }
