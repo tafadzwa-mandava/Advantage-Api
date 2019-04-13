@@ -55,7 +55,9 @@ namespace Advantage.API
             seed.SeedData(20, 1000); //We want 20 customers and 1000 Orders
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseMvc(routes => routes.MapRoute(
+                "default", "api/{controller}/{action}/{id?}"
+            ));
         }
     }
 }
